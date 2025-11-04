@@ -1,5 +1,5 @@
-Titre : Workshop 
-<br>
+Titre : Workshop
+
 Date : 2025
 
 Sujet : le marais de Biestebroek
@@ -11,7 +11,7 @@ Equipe :
     3D
     Noah Cockmartin (3e)
     Baptiste De Boeck (3e)
-    SEmih Guney 
+    Semih Guney 
     David Lago Bom
 
     Web
