@@ -1,3 +1,2 @@
-$(function() {
-    $('body').css('color', 'red');
-});
+import './gsap.js';
+import './menu.js';
