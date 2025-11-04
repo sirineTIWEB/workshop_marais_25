@@ -4,7 +4,7 @@ import { ScrollTrigger } from "https://cdn.jsdelivr.net/npm/gsap@3.12.5/ScrollTr
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".parent-horz", {
-    // negative (bcs to left) la largeur total avec les enfants minus le window vp
+    // negative (bcs from left) la largeur total avec les enfants minus le window vp
     x: () => -(document.querySelector('.parent-horz').scrollWidth - window.innerWidth),
     scrollTrigger: {
         trigger: ".parent-horz",
