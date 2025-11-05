@@ -478,12 +478,12 @@ span {
   font-style: italic;
 }
 .ble {
-  background-image: url(/src/assets/img/blé.png);
+  background-image: url(../assets/img/ble.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .herosec {
-  background-image: url(/src/assets/img/framboise.png);
+  background-image: url(../assets/img/framboise.png);
   background-position: bottom left;
   background-size: 60%;
   mix-blend-mode: darken;

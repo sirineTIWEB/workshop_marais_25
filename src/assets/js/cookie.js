@@ -8,7 +8,7 @@ $(document).ready(function () {
     const $banniere = $(`
         <div id="cookie" class="fixed z-10 top-10 left-10 border border-black p-4 flex flex-col items-end">
             <button id="PauseCookies" class="cursor-pointer">X</button>
-            <h4>Ce site utilise des cookies pour améliorer votre expérience.</h4>
+            <h3>Ce site utilise des cookies pour améliorer votre expérience.</h3>
             <div>
                 <button id="AcceptCookies" class="border border-black rounded-2xl p-2 m-2 cursor-pointer">J'accepte</button>
                 <button id="RejectCookies" class="border border-black rounded-2xl p-2 m-2 cursor-pointer">Je refuse</button>
