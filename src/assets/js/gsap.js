@@ -71,5 +71,5 @@ ScrollTrigger.create({
   pinSpacing: false,
   start: "top top",
   end: () => `${document.querySelector('.footer').offsetTop}`,
-  markers: true // Pour débugger, vous pouvez l'enlever après
+  markers: false // Pour débugger, vous pouvez l'enlever après
 });
