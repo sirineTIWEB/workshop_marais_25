@@ -40,7 +40,6 @@ gsap.to('#loading-video-layer', {
 
 // First vertical section fades in as video fades out
 gsap.from('.h-screen:nth-of-type(2)', {
-    opacity: 0,
     ease: "power4.inOut",
     scrollTrigger: {
         trigger: '#loading-video-layer',
@@ -63,4 +62,14 @@ gsap.to(".parent-horz", {
         scrub: true,
         pin: true
     }
+});
+
+
+ScrollTrigger.create({
+  trigger: "#progressbar",
+  pin: "#progressbar",
+  pinSpacing: false,
+  start: "top top",
+  end: () => `${document.querySelector('.footer').offsetTop}`,
+  markers: true // Pour débugger, vous pouvez l'enlever après
 });

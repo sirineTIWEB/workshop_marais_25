@@ -1,1 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+/* 
+.epilogue-<uniquifier> {
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+@theme {
+  --color-mybeige: #FFF8EB;
+  --color-mydarkgreen: #1B6C30;
+  --color-mylightgreen: #FFF8EB;
+}
+
+body {
+    font-family: "Epilogue", sans-serif;
+    background-color: var(--color-mybeige);
+}
+
+h1 {
+    font-weight: 500;
+    @apply text-7xl leading-24;
+}
+
+h2 {
+    font-weight: 500;
+    @apply text-5xl leading-16;
+}
+
+h3 {
+    font-weight: 400;
+    @apply text-2xl leading-10;
+}
+
+h4 {
+    font-weight: 400;
+    @apply text-3xl leading-10;
+}
+
+p {
+    font-weight: 400;
+    @apply text-xl leading-8;
+}
+
+span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    @apply italic;
+}
+
+.ble {
+    background-image: url(/src/assets/img/blé.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.herosec {
+    background-image: url(/src/assets/img/framboise.png);
+    background-position: bottom left;
+    background-size: 60%;
+    mix-blend-mode: darken;
+    background-repeat: no-repeat;
+}
