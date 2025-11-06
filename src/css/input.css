@@ -61,4 +61,6 @@ span {
 .bruit {
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     mix-blend-mode: hard-light;
+    z-index: 9999;
+    opacity: 0.4;
 }
