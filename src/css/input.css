@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 /* 
 .epilogue-<uniquifier> {
@@ -9,58 +9,59 @@
 } */
 
 @theme {
-  --color-mybeige: #FFF8EB;
-  --color-mydarkgreen: #1B6C30;
-  --color-mylightgreen: #FFF8EB;
+  --color-mybeige: #fff8eb;
+  --color-mydarkgreen: #1b6c30;
+  --color-mylightgreen: #fff8eb;
 }
 
 body {
-    font-family: "Epilogue", sans-serif;
-    background-color: var(--color-mybeige);
+  font-family: "Epilogue", sans-serif;
+  background-color: var(--color-mybeige);
 }
 
 h1 {
-    font-weight: 500;
-    @apply text-7xl leading-24;
+  font-weight: 500;
+  @apply text-7xl leading-24;
 }
 
 h2 {
-    font-weight: 500;
-    @apply text-5xl leading-16;
+  font-weight: 500;
+  @apply text-5xl leading-16;
 }
 
-h3 {
-    font-weight: 400;
-    @apply text-2xl leading-10;
+h3,
+a {
+  font-weight: 400;
+  @apply text-2xl leading-10;
 }
 
 h4 {
-    font-weight: 400;
-    @apply text-3xl leading-10;
+  font-weight: 400;
+  @apply text-3xl leading-10;
 }
 
 p {
-    font-weight: 400;
-    @apply text-xl leading-8;
+  font-weight: 400;
+  @apply text-xl leading-8;
 }
 
 span {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    @apply italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  @apply italic;
 }
 
 /* img plus grande */
 .ble {
-    background-image: url(../assets/img/ble.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-image: url(../assets/img/ble.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* diminuer lespace dans photoshop */
 .herosec {
-    background-image: url(../assets/img/framboise.png);
-    background-position: bottom left;
-    background-size: 60%;
-    mix-blend-mode: darken;
-    background-repeat: no-repeat;
+  background-image: url(../assets/img/framboise.png);
+  background-position: bottom left;
+  background-size: 60%;
+  mix-blend-mode: darken;
+  background-repeat: no-repeat;
 }
