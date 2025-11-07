@@ -514,6 +514,9 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .contain-content {
+    contain: content;
+  }
   .hover\:border-none {
     &:hover {
       @media (hover: hover) {
