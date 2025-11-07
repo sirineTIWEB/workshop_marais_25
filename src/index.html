@@ -6,104 +6,120 @@
     <title>Le marais de Biestebroek</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="css/output.css" />
-  </head>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<!-- fjksdjflk -->
 
-<body class="dark:bg-black">
+<body>
     <img src="assets/img/Pause GIF image.gif" alt="noise effect" class="fixed top-0 left-0 w-screen h-screen bruit pointer-events-none">
-
-    <div class="navbar fixed top-0 left-0 w-full z-40 transition-all duration-300">
-        <div class="flex-1">
-            <a class="btn btn-ghost text-xl hover:bg-transparent hover:shadow-none hover:border-none">Le
-                Marais</a>
-        </div>
-        <div class="flex-none">
-            <ul class="menu menu-horizontal px-1">
-                <li><a class="hover:bg-transparent hover:shadow-none hover:border-none">Notre projet</a></li>
-                <li><a class="hover:bg-transparent hover:shadow-none hover:border-none">Les problématiques</a></li>
-                <!-- <li>
-                            <details>
-                                <summary class="hover:bg-transparent hover:shadow-none hover:border-none">Les
-                                    problématiques</summary>
-                                <ul class="absolute z-10">
-                                    <li><a class="hover:bg-transparent hover:shadow-none hover:border-none">Logement</a>
-                                    </li>
-                                    <li><a
-                                            class="hover:bg-transparent hover:shadow-none hover:border-none">équipement</a>
-                                    </li>
-                                    <li><a class="hover:bg-transparent hover:shadow-none hover:border-none">Espace
-                                            vert</a></li>
-                                </ul>
-                            </details>
-                        </li> -->
-                <li><a class="hover:bg-transparent hover:shadow-none hover:border-none">Solutions</a></li>
-                <li><a class="hover:bg-transparent hover:shadow-none hover:border-none">Comment agir ?</a></li>
-            </ul>
-        </div>
-    </div>
-
     <section id="smooth-wrapper">
         <section id="smooth-content">
-            <section class="full-screen" id="loading-video-layer" class="w-full h-screen bg-black">
-                <video id="loading-video" class="w-full h-full object-cover" autoplay muted loop playsinline>
+            <section class="full-screen" id="loading-video-layer" class="w-full bg-black">
+                <video id="loading-video" class="w-full h-full object-cover" autoplay muted loop playsinline data-speed="0.4">
                     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </section>
 
-            <progress id="progressbar" class="progress w-full rounded-none h-1.5 text-mydarkgreen z-50" value="0"
-                max="100"></progress>
+            <header class="head bg-mybeige relative ">
+                <div class="navbar">
 
-            <section class="h-screen w-full mt-10 mx-8 herosec">
-                <section class="h-fit grid grid-cols-4 grid-rows-[0.5fr_1fr_1fr]">
-                    <p class="col-start-1 row-start-1">(Logement et équipement)</p>
-                    <h1 class="col-start-2 col-end-5 row-start-1">Marais de Biestebroeck, un</h1>
-                    <h1 class="col-start-1 col-end-5 row-start-2">espace naturel,un patrimoine écologique précieux, en
+                    <div class="flex-1">
+                        <a class="btn btn-ghost text-xl hover:bg-transparent hover:shadow-none hover:border-none">Le
+                            Marais</a>
+                    </div>
+
+                    <div class="flex-none">
+                        <ul class="menu menu-horizontal px-1">
+                            <li>
+                                <a class="splittext hover:bg-transparent hover:shadow-none hover:border-none flex flex-col ">
+                                    <span class="split">Notre projet</span>
+                                    <span class="split">Notre projet</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="splittext hover:bg-transparent hover:shadow-none hover:border-none flex flex-col ">
+                                    <span class="split">Problématique</span>
+                                    <span class="split">Problématique</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="splittext hover:bg-transparent hover:shadow-none hover:border-none flex flex-col ">
+                                    <span class="split">Solution</span>
+                                    <span class="split">Solution</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="splittext hover:bg-transparent hover:shadow-none hover:border-none flex flex-col ">
+                                    <span class="split">Agir</span>
+                                    <span class="split">Agir</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            <progress id="progressbar" class="progress w-full rounded-none h-1.5 text-mydarkgreen z-50" value="0"
+                    max="100"></progress>
+
+                <section class="h-screen w-full mt-10 px-8 herosec">
+                    <section class="h-fit grid grid-cols-4 grid-rows-[0.5fr_1fr_1fr]">
+                        <p class="parenthese slide col-start-1 row-start-1">(Logement et équipement)</p>
+                        <h1 class="slide col-start-2 col-end-5 row-start-1">Marais de Biestebroeck, un</h1>
+                        <h1 class="slide col-start-1 col-end-5 row-start-2">espace naturel,un patrimoine écologique précieux,
+                            en
                         pleine ville.</h1>
-                    <h3 class="col-start-3 col-end-5 row-start-3">Le marais régule les eaux, rafraîchit le
-                        quartier, et offre un espace de respiration unique dans une zone fortement urbanisée. Le
-                        préserver, c'est défendre un équilibre entre nature, logement et vie de quartier.</h3>
+                        <h3 class="slide col-start-3 col-end-5 row-start-3">Le marais régule les eaux, rafraîchit le
+                            quartier, et offre un espace de respiration unique dans une zone fortement urbanisée. Le
+                            préserver, c'est défendre un équilibre entre nature, logement et vie de quartier.</h3>
+                    </section>
                 </section>
-            </section>
+            </header>
+
 
 
 
             <section class="h-screen w-screen flex gap-16">
-                <div class="h-auto w-2/3 overflow-hidden" >
-                    <img class="filter" src="assets/img/plan.png" alt="plan">
+                <div class="h-fit w-2/3 overflow-hidden">
+                    <img src="assets/img/plan.png" alt="plan">
                 </div>
                 <div class="flex flex-col gap-9 w-1/3 mr-24">
-                    <h2>Promesse de logement</h2>
-                    <h3>Le marais pourrait accueillir des logements accessibles et durables, pensés pour les
+                    <h2 class="slide2">Promesse de logement</h2>
+                    <h3 class="slide2">Le marais pourrait accueillir des logements accessibles et durables, pensés pour les
+                       
                         habitant·e·s du quartier. Des logements sociaux et abordables, intégrés dans un cadre verdoyant,
+                       
                         permettraient à chacun·e de vivre dignement sans être exclu·e par la spéculation immobilière.
+                       
                         Construire au marais, oui — mais autrement : à échelle humaine, en respectant le lieu et ses
+                       
                         habitants.</h3>
                 </div>
             </section>
 
-            <section class="h-screen w-screen flex flex-col items-end justify-center ble">
-                <h1 class="w-2/3">On densifie le quartier sans lui donner <span>de souffle.</span></h1>
-                <h4 class="w-1/2">À Anderlecht, plus de 120 000 habitants partagent seulement 12 crèches publiques et
+            <section class="h-screen w-screen flex flex-col items-end justify-center ble mr-16">
+                <h1 class="slide3 w-2/3">On densifie le quartier sans lui donner<span>de souffle.</span></h1>
+                <h4 class="slide3 w-1/2">À Anderlecht, plus de 120 000 habitants partagent seulement 12 crèches publiques et
+                   
                     très peu d'espaces verts.</h4>
             </section>
 
             <section class="h-screen w-screen flex gap-20 ml-20">
                 <div class="flex flex-col w-1/3">
-                    <h2>Sans espace vert</h2>
-                    <h3>Chaque mètre carré bâti, c'est un peu d'air, de nature et de lien social en moins. Pourtant, les
+                    <h2 class="slide4">Sans espace vert</h2>
+                    <h3 class="slide4">Chaque mètre carré bâti, c'est un peu d'air, de nature et de lien social en moins. Pourtant, les
+                       
                         habitants ont montré leur attachement à ce lieu lors des activités de quartier, des balades, ou
+                       
                         du mini-stade du FC Biestebroeck. Ne laissons pas disparaître ce poumon vert qui rend la ville
+                       
                         plus respirable et plus humaine.</h3>
                 </div>
                 <div class="h-auto w-2/3">
@@ -117,7 +133,7 @@
                         <div class="diff-resizer text-mydarkgreen"></div>
                     </figure>
                 </div>
-
+                
             </section>
 
             <section class="parent-horz flex">
@@ -212,6 +228,7 @@
                   <a
                     href="mailto:marais@biestebroek.be"
                     class="text-mybeige opacity-60"
+                    rel="noopener noreferrer"
                     >marais@biestebroek.be</a
                   >
                 </li>
@@ -245,6 +262,7 @@
             <a
               class="w-96 flex flex-row justify-between items-baseline mb-3 mt-0"
               href="mailto:marais@biestebroek.be"
+              rel="noopener noreferrer"
             >
               <h3 class="text-mybeige">E-mail</h3>
               <svg
