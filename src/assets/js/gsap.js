@@ -19,14 +19,78 @@ ScrollSmoother.create({
 // Video fade out and scale down effect
 gsap.to('#loading-video-layer', {
     opacity: 0.3,
-    scale: 0.8,
+    scale: 0.9,
     scrollTrigger: {
         trigger: '#loading-video-layer',
         start: "25%",
         scrub: true,
-        markers: true
+        markers: false
     }
 });
+
+gsap.from('.slide', {
+    opacity:0,
+    duration: 0.7,
+    autoAplha: 0,
+    y: 100,
+    stagger: 0.1,
+    ease: "power3.out",
+
+    scrollTrigger: {
+        trigger: '#loading-video',
+        start: "20%",
+        restart: true,
+        markers: false
+    }
+})
+
+gsap.from('.slide2', {
+    opacity:0,
+    duration: 0.7,
+    autoAplha: 0,
+    y: 100,
+    stagger: 0.1,
+    ease: "power3.out",
+
+    scrollTrigger: {
+        trigger: '.slide2',
+        start: "top 90%",
+        restart: true,
+        markers: false
+    }
+})
+
+gsap.from('.slide3', {
+    opacity:0,
+    duration: 0.7,
+    autoAplha: 0,
+    y: 100,
+    stagger: 0.1,
+    ease: "power3.out",
+
+    scrollTrigger: {
+        trigger: '.slide3',
+        start: "top 90%",
+        restart: true,
+        markers: false
+    }
+})
+
+gsap.from('.slide4', {
+    opacity:0,
+    duration: 0.7,
+    autoAplha: 0,
+    y: 100,
+    stagger: 0.1,
+    ease: "power3.out",
+
+    scrollTrigger: {
+        trigger: '.slide4',
+        start: "top 90%",
+        restart: true,
+        markers: true
+    }
+})
 
 // gsap.to('#loading-video-layer', {
 //     scale: 0.94,
@@ -68,10 +132,10 @@ gsap.to(".parent-horz", {
 
 
 ScrollTrigger.create({
-  trigger: "#progressbar",
-  pin: "#progressbar",
-  pinSpacing: false,
-  start: "top top",
-  end: () => `${document.querySelector('.footer').offsetTop}`,
-  markers: false // Pour débugger, vous pouvez l'enlever après
+    trigger: "#progressbar",
+    pin: "#progressbar",
+    pinSpacing: false,
+    start: "top top",
+    end: () => `${document.querySelector('.footer').offsetTop}`,
+    markers: false // Pour débugger, vous pouvez l'enlever après
 });
