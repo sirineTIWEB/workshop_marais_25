@@ -24,13 +24,13 @@
 
     <div class="navbar fixed top-0 left-0 w-full z-40 transition-all duration-300">
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl hover:bg-transparent hover:shadow-none hover:border-none">Le
+            <a class="btn btn-ghost text-xl hover:bg-transparent hover:shadow-none hover:border-none text-mydarkgreen">Le
                 Marais</a>
         </div>
         <div class="flex-none">
             <ul class="menu menu-horizontal px-1">
-                <li><a class="hover:bg-transparent hover:shadow-none hover:border-none">Notre projet</a></li>
-                <li><a class="hover:bg-transparent hover:shadow-none hover:border-none">Les problématiques</a></li>
+                <li><a class="hover:bg-transparent hover:shadow-none hover:border-none text-mydarkgreen">Notre projet</a></li>
+                <li><a class="hover:bg-transparent hover:shadow-none hover:border-none text-mydarkgreen">Les problématiques</a></li>
                 <!-- <li>
                             <details>
                                 <summary class="hover:bg-transparent hover:shadow-none hover:border-none">Les
@@ -46,8 +46,8 @@
                                 </ul>
                             </details>
                         </li> -->
-                <li><a class="hover:bg-transparent hover:shadow-none hover:border-none">Solutions</a></li>
-                <li><a class="hover:bg-transparent hover:shadow-none hover:border-none">Comment agir ?</a></li>
+                <li><a class="hover:bg-transparent hover:shadow-none hover:border-none text-mydarkgreen">Solutions</a></li>
+                <li><a class="hover:bg-transparent hover:shadow-none hover:border-none text-mydarkgreen">Comment agir ?</a></li>
             </ul>
         </div>
     </div>
@@ -55,7 +55,7 @@
     <section id="smooth-wrapper">
         <section id="smooth-content">
             <section class="full-screen" id="loading-video-layer" class="w-full h-screen bg-black">
-                <video id="loading-video" class="w-full h-full object-cover" autoplay muted loop playsinline>
+                <video id="loading-video" class="w-screen h-screen object-cover" autoplay muted loop playsinline>
                     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -64,7 +64,7 @@
             <progress id="progressbar" class="progress w-full rounded-none h-1.5 text-mydarkgreen z-50" value="0"
                 max="100"></progress>
 
-            <section class="h-screen w-full mt-10 mx-8 herosec">
+            <section class="h-screen w-full mt-10 px-8 herosec">
                 <section class="h-fit grid grid-cols-4 grid-rows-[0.5fr_1fr_1fr]">
                     <p class="col-start-1 row-start-1">(Logement et équipement)</p>
                     <h1 class="col-start-2 col-end-5 row-start-1">Marais de Biestebroeck, un</h1>
@@ -79,7 +79,7 @@
 
 
             <section class="h-screen w-screen flex gap-16">
-                <div class="h-auto w-2/3">
+                <div class="h-fit w-2/3 overflow-hidden">
                     <img src="assets/img/plan.png" alt="plan">
                 </div>
                 <div class="flex flex-col gap-9 w-1/3 mr-24">
@@ -92,7 +92,7 @@
                 </div>
             </section>
 
-            <section class="h-screen w-screen flex flex-col items-end justify-center ble">
+            <section class="h-screen w-screen flex flex-col items-end justify-center ble mr-16">
                 <h1 class="w-2/3">On densifie le quartier sans lui donner <span>de souffle.</span></h1>
                 <h4 class="w-1/2">À Anderlecht, plus de 120 000 habitants partagent seulement 12 crèches publiques et
                     très peu d'espaces verts.</h4>
@@ -212,6 +212,7 @@
                   <a
                     href="mailto:marais@biestebroek.be"
                     class="text-mybeige opacity-60"
+                    rel="noopener noreferrer"
                     >marais@biestebroek.be</a
                   >
                 </li>
@@ -245,6 +246,7 @@
             <a
               class="w-96 flex flex-row justify-between items-baseline mb-3 mt-0"
               href="mailto:marais@biestebroek.be"
+              rel="noopener noreferrer"
             >
               <h3 class="text-mybeige">E-mail</h3>
               <svg

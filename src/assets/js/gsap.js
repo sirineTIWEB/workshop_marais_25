@@ -88,7 +88,7 @@ $('img[src="assets/img/plan.png"]').hover(
   function() {
     // On mouse enter
     gsap.to(this, {
-      scale: 1.1,
+      scale: 2,
       duration: 0.6,
       ease: "power2.out"
     });
