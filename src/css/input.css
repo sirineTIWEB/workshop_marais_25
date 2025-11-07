@@ -70,7 +70,7 @@ span {
 
 .bruit {
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-    mix-blend-mode: hard-light;
+    /* mix-blend-mode: hard-light; */
     z-index: 100;
-    opacity: 0.4;
+    opacity: 0.035;
 }
