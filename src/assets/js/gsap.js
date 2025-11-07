@@ -18,36 +18,38 @@ ScrollSmoother.create({
 
 // Video fade out and scale down effect
 gsap.to('#loading-video-layer', {
-    opacity: 0,
+    opacity: 0.3,
+    scale: 0.8,
     scrollTrigger: {
         trigger: '#loading-video-layer',
-        start: "center 45%",
+        start: "25%",
         scrub: true,
-        markers: false
+        markers: true
     }
 });
 
-gsap.to('#loading-video-layer', {
-    scale: 0.94,
-    ease: "power2.inOut",
-    scrollTrigger: {
-        trigger: '#loading-video-layer',
-        start: "center 45%",
-        scrub: true,
-        markers: false
-    }
-});
+// gsap.to('#loading-video-layer', {
+//     scale: 0.94,
+//     ease: "power2.inOut",
+//     scrollTrigger: {
+//         trigger: '#loading-video-layer',
+//         start: "center 45%",
+//         scrub: true,
+//         markers: false
+//     }
+// });
 
 // First vertical section fades in as video fades out
-gsap.from('.h-screen:nth-of-type(2)', {
-    ease: "power4.inOut",
-    scrollTrigger: {
-        trigger: '#loading-video-layer',
-        start: "center 45%",
-        scrub: true,
-        markers: false
-    }
-});
+// gsap.from('.head', {
+//     // ease: "power4.inOut",
+//     opacity: 1,
+//     scrollTrigger: {
+//         trigger: '#loading-video-layer',
+//         start: "center 45%",
+//         scrub: true,
+//         markers: false
+//     }
+// });
 
 
 gsap.to(".parent-horz", {
