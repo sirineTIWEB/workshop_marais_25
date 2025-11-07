@@ -102,3 +102,53 @@ $('img[src="assets/img/plan.png"]').hover(
     });
   }
 );
+
+gsap.from('.slide5', {
+    opacity:0,
+    duration: 0.7,
+    autoAplha: 0,
+    y: 100,
+    stagger: 0.1,
+    ease: "power3.out",
+ 
+    scrollTrigger: {
+        trigger: '.slide5',
+        start: "20%",
+        restart: true,
+        markers: false
+    }
+})
+
+// gsap.from('.slide6', {
+//     opacity: 0,
+//     duration: 0.7,
+//     autoAlpha: 0,
+//     y: 100,  // Utilisez 'x' au lieu de 'y' pour un mouvement horizontal
+//     ease: "power3.out",
+ 
+//     scrollTrigger: {
+//         trigger: '.slide6',
+//         start: "left center",  // Position horizontale de départ
+
+//         horizontal: true,      // Active le mode horizontal
+//         scrub: true,          // Lie l'animation au scroll (optionnel)
+//         markers: true,
+//     }
+// })
+
+
+gsap.from('.slide6', {
+    opacity:0,
+    duration: 0.7,
+    // autoAplha: 0,
+    y: 100,
+    stagger: 0.1,
+    ease: "power3.out",
+ 
+    scrollTrigger: {
+        trigger: '.slide6',
+        start: "20%",
+        restart: true,
+        markers: true
+    }
+})
