@@ -1,12 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
-@import "tailwindcss";
-/* 
-.epilogue-<uniquifier> {
-  font-family: "Epilogue", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');@import "tailwindcss";
 
 @theme {
   --color-mybeige: #fff8eb;
@@ -19,6 +11,16 @@ body {
   background-color: var(--color-mybeige);
 }
 
+::selection {
+    background-color: var(--color-mydarkgreen);
+    color: var(--color-mybeige);
+}
+
+::-moz-selection {
+    background-color: var(--color-mydarkgreen);
+    color: var(--color-mybeige);
+}
+
 h1 {
   font-weight: 500;
   @apply text-7xl leading-24;
@@ -29,10 +31,9 @@ h2 {
   @apply text-5xl leading-16;
 }
 
-h3,
-a {
-  font-weight: 400;
-  @apply text-2xl leading-10;
+h3, a {
+    font-weight: 400;
+    @apply text-2xl leading-10;
 }
 
 h4 {
@@ -46,8 +47,9 @@ p {
 }
 
 span {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  @apply italic;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    @apply italic;
 }
 
 /* img plus grande */
@@ -64,4 +66,11 @@ span {
   background-size: 60%;
   mix-blend-mode: darken;
   background-repeat: no-repeat;
+}
+
+.bruit {
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    mix-blend-mode: hard-light;
+    z-index: 100;
+    opacity: 0.4;
 }

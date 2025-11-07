@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     // création des éléments de la bannière
     const $banniere = $(`
-        <div id="cookie" class="fixed z-10 top-10 left-10 border border-black p-4 flex flex-col items-end">
+        <div id="cookie" class="fixed z-10 top-20 left-10 border border-black p-4 flex flex-col items-end">
             <button id="PauseCookies" class="cursor-pointer">X</button>
             <h3>Ce site utilise des cookies pour améliorer votre expérience.</h3>
             <div>
