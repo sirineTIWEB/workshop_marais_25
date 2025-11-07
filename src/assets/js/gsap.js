@@ -88,7 +88,7 @@ gsap.from('.slide4', {
         trigger: '.slide4',
         start: "top 90%",
         restart: true,
-        markers: true
+        markers: false
     }
 })
 
@@ -215,6 +215,6 @@ gsap.from('.slide6', {
         trigger: '.slide6',
         start: "20%",
         restart: true,
-        markers: true
+        markers: false
     }
 })
