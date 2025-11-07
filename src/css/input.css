@@ -11,6 +11,16 @@ body {
     background-color: var(--color-mybeige);
 }
 
+::selection {
+    background-color: var(--color-mydarkgreen);
+    color: var(--color-mybeige);
+}
+
+::-moz-selection {
+    background-color: var(--color-mydarkgreen);
+    color: var(--color-mybeige);
+}
+
 h1 {
     font-weight: 500;
     @apply text-7xl leading-24;
@@ -21,12 +31,12 @@ h2 {
     @apply text-5xl leading-16;
 }
 
-h3 {
+h3, a {
     font-weight: 400;
     @apply text-2xl leading-10;
 }
 
-h4, a {
+h4 {
     font-weight: 400;
     @apply text-3xl leading-10;
 }

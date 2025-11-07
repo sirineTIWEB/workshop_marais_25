@@ -73,3 +73,32 @@ ScrollTrigger.create({
   end: () => `${document.querySelector('.footer').offsetTop}`,
   markers: false // Pour débugger, vous pouvez l'enlever après
 });
+
+ScrollTrigger.create({
+  trigger: "#tritonyVideo",
+  start: "bottom center",
+//   once: true,
+  onEnter: () => {
+    document.getElementById('tritonyVideo').play();
+  }
+});
+
+// Smooth hover scale effect for plan image using jQuery and GSAP
+$('img[src="assets/img/plan.png"]').hover(
+  function() {
+    // On mouse enter
+    gsap.to(this, {
+      scale: 1.1,
+      duration: 0.6,
+      ease: "power2.out"
+    });
+  },
+  function() {
+    // On mouse leave
+    gsap.to(this, {
+      scale: 1,
+      duration: 0.6,
+      ease: "power2.out"
+    });
+  }
+);
