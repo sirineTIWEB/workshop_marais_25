@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');@import "tailwindcss";
 
 @theme {
-  --color-mybeige: #FFF8EB;
-  --color-mydarkgreen: #1B6C30;
-  --color-mylightgreen: #FFF8EB;
+  --color-mybeige: #fff8eb;
+  --color-mydarkgreen: #1b6c30;
+  --color-mylightgreen: #fff8eb;
 }
 
 body {
-    font-family: "Epilogue", sans-serif;
-    background-color: var(--color-mybeige);
+  font-family: "Epilogue", sans-serif;
+  background-color: var(--color-mybeige);
 }
 
 ::selection {
@@ -22,13 +22,13 @@ body {
 }
 
 h1 {
-    font-weight: 500;
-    @apply text-7xl leading-24;
+  font-weight: 500;
+  @apply text-7xl leading-24;
 }
 
 h2 {
-    font-weight: 500;
-    @apply text-5xl leading-16;
+  font-weight: 500;
+  @apply text-5xl leading-16;
 }
 
 h3, a {
@@ -37,13 +37,13 @@ h3, a {
 }
 
 h4 {
-    font-weight: 400;
-    @apply text-3xl leading-10;
+  font-weight: 400;
+  @apply text-3xl leading-10;
 }
 
 p {
-    font-weight: 400;
-    @apply text-xl leading-8;
+  font-weight: 400;
+  @apply text-xl leading-8;
 }
 
 span {
@@ -54,18 +54,18 @@ span {
 
 /* img plus grande */
 .ble {
-    background-image: url(../assets/img/ble.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-image: url(../assets/img/ble.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* diminuer lespace dans photoshop */
 .herosec {
-    background-image: url(../assets/img/framboise.png);
-    background-position: bottom left;
-    background-size: 60%;
-    mix-blend-mode: darken;
-    background-repeat: no-repeat;
+  background-image: url(../assets/img/framboise.png);
+  background-position: bottom left;
+  background-size: 60%;
+  mix-blend-mode: darken;
+  background-repeat: no-repeat;
 }
 
 .bruit {
