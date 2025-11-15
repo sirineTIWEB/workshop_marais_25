@@ -642,6 +642,13 @@ span {
 .filter {
   mix-blend-mode: overlay;
 }
+.rideau {
+  position: fixed;
+  z-index: 999999999999999999999999;
+  width: 100%;
+  height: 0%;
+  background-color: #1B6C30;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;

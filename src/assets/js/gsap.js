@@ -1,20 +1,31 @@
 import { gsap } from "https://cdn.jsdelivr.net/npm/gsap@3.12.5/+esm";
 import { ScrollTrigger } from "https://cdn.jsdelivr.net/npm/gsap@3.12.5/ScrollTrigger/+esm";
-import { ScrollSmoother } from "https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js/+esm";
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
+
+// Note: ScrollSmoother est un plugin premium GSAP qui nécessite une licence
+// Si vous n'avez pas de licence, commentez cette section
+// Si vous avez une licence, hébergez le fichier localement et importez-le
+
+// ScrollSmoother.create({
+//     wrapper: "#smooth-wrapper",
+//     content: "#smooth-content",
+//     // latence comparé au réel smooth
+//     smooth: 1.5,
+//     // parallax
+//     effects: true,
+//     // adaptation mobile
+//     smoothTouch: 0.1
+// });
 
 
-ScrollSmoother.create({
-    wrapper: "#smooth-wrapper",
-    content: "#smooth-content",
-    // latence comparé au réel smooth
-    smooth: 1.5,
-    // parallax
-    effects: true,
-    // adaptation mobile
-    smoothTouch: 0.1
-});
+// gsap.from('.rideau', {
+//     height: "100%",
+//     duration: 1.25,
+//     delay: 1,
+//     ease: "power4.inOut",
+// });
+
 
 // Video fade out and scale down effect
 gsap.to('#loading-video-layer', {
@@ -28,6 +39,22 @@ gsap.to('#loading-video-layer', {
     }
 });
 
+
+// Navbar animation - same timing as slide elements
+gsap.from('.navbar', {
+    opacity:0,
+    duration: 0.7,
+    y: -50,
+    ease: "power3.out",
+
+    scrollTrigger: {
+        trigger: '.herosec',
+        start: "top 80%",
+        restart: true,
+        markers: false
+    }
+});
+
 gsap.from('.slide', {
     opacity:0,
     duration: 0.7,
@@ -37,8 +64,8 @@ gsap.from('.slide', {
     ease: "power3.out",
 
     scrollTrigger: {
-        trigger: '#loading-video',
-        start: "20%",
+        trigger: '.herosec',
+        start: "top 80%",
         restart: true,
         markers: false
     }
